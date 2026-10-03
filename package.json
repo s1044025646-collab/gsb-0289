@@ -1,0 +1,18 @@
+{
+  "name": "dna-orf-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DNA 双链开放阅读框定位与密码子翻译后端（API + CLI）",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/orf.test.js",
+    "start": "node dist/src/cli.js serve",
+    "demo": "node dist/src/cli.js demo",
+    "cli": "node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
